@@ -17,7 +17,7 @@ const Rooms = () => {
                         <p>Bed : 1 Single bed</p>
                         <p>Capacity : 1 Person</p>
                         <p>Facility : Tv, Private Bathroom, WiFi, Hot and Cool Water</p>
-                        <a href="#my-modal-2" className="text-green-500 font-bold">Trams & condition</a>
+                        <label for="my-modal" className="cursor-pointer text-green-500 font-bold">Trams & condition</label>
                         <div className="card-actions justify-between">
                             <button className="btn btn-active btn-link">USD $30</button>
                             <label 
@@ -35,7 +35,7 @@ const Rooms = () => {
                         <p>Bed : 1 Queen bed</p>
                         <p>Capacity : 2 Person</p>
                         <p>Facility : Tv, Private Bathroom, WiFi, Hot and Cool Water</p>
-                        <a href="#my-modal-2" className="text-green-500 font-bold">Trams & condition</a>
+                        <label for="my-modal" className="cursor-pointer text-green-500 font-bold">Trams & condition</label>
                         <div className="card-actions justify-between">
                             <button className="btn btn-active btn-link">USD $40</button>
                             <label 
@@ -53,7 +53,7 @@ const Rooms = () => {
                         <p>Bed : 2 Queen bed</p>
                         <p>Capacity : 4 Person</p>
                         <p>Facility : Tv, Private Bathroom, WiFi, Hot and Cool Water</p>
-                        <a href="#my-modal-2" className="text-green-500 font-bold">Trams & condition</a>
+                        <label for="my-modal" className="cursor-pointer text-green-500 font-bold">Trams & condition</label>
                         <div className="card-actions justify-between">
                             <button className="btn btn-active btn-link">USD $50</button>
                             <label 
@@ -64,7 +64,10 @@ const Rooms = () => {
                         </div>
                     </div>
                 </div>
-                <div className="modal" id="my-modal-2">
+
+                
+                <input type="checkbox" id="my-modal" className="modal-toggle" />
+                <div className="modal">
                     <div className="modal-box bg-white text-gray-500">
                         <h3 className="font-bold text-lg">Cancelation Policy Caribbean Hotel</h3>
                         <p className="py-4">1. Guests booking rooms are required to pay the total cost of the booking in advance.</p>
@@ -73,7 +76,7 @@ const Rooms = () => {
                         <p className="py-4">4. The cancellation is 100% of charge 29 days prior to the date of arrival.</p>
                         <p className="py-4">5. For the non refundable bookings are no cancellation or changes possible. In case of a cancellation, 90% of the total amount will be charged as cancellation fee.</p>
                         <div className="modal-action">
-                            <a href="#" className="btn">Yes & Agree</a>
+                            <label for="my-modal" className="btn">Yes & Agree</label>
                         </div>
                     </div>
                 </div>

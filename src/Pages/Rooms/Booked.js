@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
 
 const Booked = ({setBook, book}) => {
 
@@ -30,32 +29,32 @@ const Booked = ({setBook, book}) => {
                     <form ref={form} onSubmit={sendEmail} className='grid grid-cols-1 gap-3 justify-items-center mt-3'>
                         <div className="w-full max-w-xs">
                             <label>Name</label>
-                            <input type="text" name="user_name" className="input input-bordered w-full max-w-xs bg-white"/>
+                            <input type="text" required name="user_name" className="input input-bordered w-full max-w-xs bg-white"/>
                         </div>
 
                         <div className="w-full max-w-xs">
                             <label>Email</label>
-                            <input type="email" name="user_email" className="input input-bordered w-full max-w-xs bg-white"/>
+                            <input type="email" required name="user_email" className="input input-bordered w-full max-w-xs bg-white"/>
                         </div>
 
                         <div className="w-full max-w-xs">
                             <label>Phone</label>
-                            <input type="text" name="phone" className="input input-bordered w-full max-w-xs bg-white"/>
+                            <input type="text" required name="phone" className="input input-bordered w-full max-w-xs bg-white"/>
                         </div>
 
                         <div className="w-full max-w-xs">
                             <label>Check In</label>
-                            <input type="date" name="checkInDate" className="input input-bordered w-full max-w-xs bg-white"/>
+                            <input type="date" required name="checkInDate" className="input input-bordered w-full max-w-xs bg-white"/>
                         </div>
 
                         <div className="w-full max-w-xs">
                             <label>Check Out</label>
-                            <input type="date" name="checkOutDate" className="input input-bordered w-full max-w-xs bg-white"/>
+                            <input type="date" required name="checkOutDate" className="input input-bordered w-full max-w-xs bg-white"/>
                         </div>
 
                         <div className="w-full max-w-xs">
                             <label>Total People</label>
-                            <input type="number" name="pax" min='1' max="4" className="input input-bordered w-full max-w-xs bg-white"/>
+                            <input type="number" required name="pax" min='1' max="4" className="input input-bordered w-full max-w-xs bg-white"/>
                         </div>
 
                         <div className="w-full max-w-xs">

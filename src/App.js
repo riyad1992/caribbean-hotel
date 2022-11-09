@@ -5,6 +5,8 @@ import Rooms from './Pages/Rooms/Rooms';
 import Navbar from './Pages/Shared/Navbar';
 import Footer from './Pages/Shared/Footer';
 import Contact from './Pages/Contact/Contact';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
