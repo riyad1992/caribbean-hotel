@@ -10,7 +10,7 @@ const Rooms = () => {
         <div>
             <h1 className='flex text-xl justify-center text-red-500 font-bold'>Reservation Your Room</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-28 mt-12 mx-8'>
-                <div className="card shadow-xl">
+                <div className="card shadow-xl" data-aos="fade-up" data-aos-duration="3000">
                     <figure><img src={room1} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Single Room</h2>
@@ -19,7 +19,7 @@ const Rooms = () => {
                         <p>Facility : Tv, Private Bathroom, WiFi, Hot and Cool Water</p>
                         <label for="my-modal" className="cursor-pointer text-green-500 font-bold">Trams & condition</label>
                         <div className="card-actions justify-between">
-                            <button className="btn btn-active btn-link">USD $30</button>
+                            <button className="btn btn-active btn-link">USD $30 per/Night</button>
                             <label 
                                 htmlFor="book-modal"
                                 onClick={() => setBook('Single Room')}
@@ -28,7 +28,7 @@ const Rooms = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card shadow-xl">
+                <div className="card shadow-xl" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <figure><img src={room2} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Double Room</h2>
@@ -37,7 +37,7 @@ const Rooms = () => {
                         <p>Facility : Tv, Private Bathroom, WiFi, Hot and Cool Water</p>
                         <label for="my-modal" className="cursor-pointer text-green-500 font-bold">Trams & condition</label>
                         <div className="card-actions justify-between">
-                            <button className="btn btn-active btn-link">USD $40</button>
+                            <button className="btn btn-active btn-link">USD $40 per/Night</button>
                             <label 
                                 htmlFor="book-modal"
                                 onClick={() => setBook('Double Room')}
@@ -46,7 +46,7 @@ const Rooms = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card shadow-xl">
+                <div className="card shadow-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <figure><img src={room3} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Quadruple Room</h2>
@@ -55,7 +55,7 @@ const Rooms = () => {
                         <p>Facility : Tv, Private Bathroom, WiFi, Hot and Cool Water</p>
                         <label for="my-modal" className="cursor-pointer text-green-500 font-bold">Trams & condition</label>
                         <div className="card-actions justify-between">
-                            <button className="btn btn-active btn-link">USD $50</button>
+                            <button className="btn btn-active btn-link">USD $50 per/Night</button>
                             <label 
                                 htmlFor="book-modal"
                                 onClick={() => setBook('Quadruple Room')}
